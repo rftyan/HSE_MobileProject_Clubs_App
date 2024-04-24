@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title_extra_large">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="title_medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="title_in_container_blue">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="main_content_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+    <style name="main_content_text.secondary">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="title_in_container_blue.secondary">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="title_action_bar">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="input_text" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">?attr/colorPrimaryInverse</item>
+        <item name="android:textColorHint">?attr/colorOnPrimaryContainer</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="boxStrokeColor">?attr/colorOnPrimaryContainer</item>
+    </style>
+    <style name="outlined_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">100dp</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+    <style name="filled_button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">100dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+</resources>
