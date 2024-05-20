@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".GroupsPageActivity">
+
+    <!-- Профиль с кнопками -->
+    <LinearLayout
+        android:id="@+id/profile_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Профильная фотография -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/post_placeholder"
+            android:contentDescription="@string/post_image" />
+
+        <!-- Информация о пользователе -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <!-- Имя пользователя -->
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+
+            <!-- Имя пользователя с @ -->
+            <TextView
+                android:id="@+id/user_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userhandle"
+                android:textSize="18sp"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/userhandle" />
+
+            <!-- Ссылка -->
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.example.com"
+                android:textColor="#0000EE"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/website_description" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Кнопки взаимодействия -->
+    <LinearLayout
+        android:id="@+id/action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/follow_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Подписаться"
+            android:contentDescription="@string/follow_button_description"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/message_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сообщение"
+            android:contentDescription="@string/message_button_description"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Панель управления с вкладками -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/md_theme_light_primary"
+        android:contentDescription="@string/tab_layout_description">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вакансии"
+            android:contentDescription="@string/vacancies_tab_description" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мероприятия"
+            android:contentDescription="@string/events_tab_description" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новости"
+            android:contentDescription="@string/news_tab_description" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- ViewPager для управления содержимым вкладок -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/view_pager_description" />
+
+</LinearLayout>
