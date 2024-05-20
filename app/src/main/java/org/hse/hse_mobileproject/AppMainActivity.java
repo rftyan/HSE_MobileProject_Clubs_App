@@ -48,8 +48,8 @@ public class AppMainActivity extends AppCompatActivity implements RecyclerViewIn
                     loadFragment(new NewsFragment(), false);
                     materialToolbar.setTitle(R.string.news_title);
                 } else if (itemId == R.id.navGroups) {
-                    loadFragment(new GroupFragment(), false);
-                    materialToolbar.setTitle(R.string.organizations_title);
+                    loadFragment(new GroupsFragment(), false);
+                    materialToolbar.setTitle(R.string.groups_title);
                 } else if (itemId == R.id.navProfile) {
                     loadFragment(new ProfileFragment(), false);
                     materialToolbar.setTitle(R.string.profile_title);

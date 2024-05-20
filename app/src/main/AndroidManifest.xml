@@ -24,6 +24,8 @@
         <activity android:name=".AppMainActivity"></activity>
         <activity android:name=".FilterActivity"></activity>
         <activity android:name=".NewsPageActivity"></activity>
+        <activity android:name=".FilterGroupsActivity"></activity>
+        <activity android:name=".GroupsPageActivity"></activity>
+        <activity android:name=".OrganizationPageActivity"></activity>
     </application>
-
 </manifest>
