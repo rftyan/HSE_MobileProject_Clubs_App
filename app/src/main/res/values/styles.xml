@@ -25,6 +25,20 @@
     <style name="title_in_container_blue.secondary">
         <item name="android:textSize">14sp</item>
     </style>
+    <style name="main_content_text.white">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="main_content_text.profile">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="hint_content_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorTertiary</item>
+    </style>
     <style name="title_action_bar">
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>

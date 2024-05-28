@@ -27,5 +27,7 @@
         <activity android:name=".FilterGroupsActivity"></activity>
         <activity android:name=".GroupsPageActivity"></activity>
         <activity android:name=".OrganizationPageActivity"></activity>
+        <activity android:name=".ChangePasswordActivity"></activity>
+        <activity android:name=".EditProfileActivity"></activity>
     </application>
 </manifest>
